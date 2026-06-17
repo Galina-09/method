@@ -69,7 +69,7 @@ const Home = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <h1>Навчально-демонстраційний додаток "FIND ROOT"</h1>
+        <h1>ЧИСЕЛЬНІ МЕТОДИ УТОЧНЕННЯ КОРЕНІВ</h1>
       </motion.div>
 
       <motion.div 
