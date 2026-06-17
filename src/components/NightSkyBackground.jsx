@@ -549,13 +549,10 @@ const NightSkyBackground = () => {
     const animate = () => {
       // Create a dark night sky background with gradient
       const gradient = ctx.createLinearGradient(0, 0, 0, dimensions.height);
-      //gradient.addColorStop(0, 'rgba(5, 5, 25, 1)');      // Darker blue at top
-     // gradient.addColorStop(0.5, 'rgba(12, 8, 35, 1)');  // Deeper midnight blue in middle
-      //gradient.addColorStop(1, 'rgba(15, 0, 30, 1)');     // Deeper purple at bottom
+      gradient.addColorStop(0, 'rgba(5, 5, 25, 1)');      // Darker blue at top
+      gradient.addColorStop(0.5, 'rgba(12, 8, 35, 1)');  // Deeper midnight blue in middle
+      gradient.addColorStop(1, 'rgba(15, 0, 30, 1)');     // Deeper purple at bottom
 
-      gradient.addColorStop(0, 'rgba(230, 230, 240, 1)'); // Світлий верх
-      gradient.addColorStop(0.5, 'rgba(215, 215, 230, 1)'); // Середина
-      gradient.addColorStop(1, 'rgba(200, 200, 220, 1)'); // Світліший низ
       
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, dimensions.width, dimensions.height);
